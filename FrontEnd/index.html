@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>My Angular Page</title>
+    <script src="vendor/angular.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- // <script src="vendor/base64decode.js" type="text/javascript" charset="utf-8"></script> -->
+    <script src="scripts/myApp.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body ng-controller="LoginController">
+    <div >
+      <h1>JWT - GO - Angular!</h1>
+      <p>{{message}}</p>
+      <form ng-submit="submit()">
+        <input type="text" name="email" ng-model="email" placeholder="E-Mail" />
+        <input type="password" name="password" ng-model="password" placeholder="Password" />
+        <input type="submit" name="submit" value="Login" />
+      </form>
+      <p>
+        <a href="" ng-click="logout()">Logout</a>
+        <a href="" ng-click="whoiam()">Who I Am</a>
+      </p>
+    </div>
+
+  </body>
+</html>
+
+
