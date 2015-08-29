@@ -12,7 +12,7 @@ This project is a sample web application demo JWT using Algular & Go
 
 ## Running locally
 
-go run main.go
+go run server.go
 
 open browser
 
